@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Build the application
-RUN ./mvnw package -DskipTests
+# RUN ./mvnw package -DskipTests
 
 # Expose the port on which the application runs
-EXPOSE 8080
+# EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "target/app.jar"]
+# CMD ["java", "-jar", "target/app.jar"]
